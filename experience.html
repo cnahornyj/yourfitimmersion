@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Expérience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <style>
+    .animation-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between the containers */
+      margin-top: 20px;
+    }
+
+    .animation-container {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: fadeInOut 8s infinite; /* Adjusted to 8s for a full cycle of 4s each image */
+    }
+
+    .image.before {
+      background-image: url('./assets/transformation_bef_1.jpg'); /* Remplacer par le chemin de votre image avant */
+    }
+
+    .image.after {
+      background-image: url('./assets/transformation_aft_1.jpg'); /* Remplacer par le chemin de votre image après */
+      animation-delay: 4s; /* 4s delay for the second image */
+    }
+
+    .image2.before {
+      background-image: url('./assets/transformation_bef_2.jpg'); /* Remplacer par le chemin de votre seconde image avant */
+    }
+
+    .image2.after {
+      background-image: url('./assets/transformation_aft_2.jpg'); /* Remplacer par le chemin de votre seconde image après */
+      animation-delay: 4s; /* 4s delay for the second image */
+    }
+
+    @keyframes fadeInOut {
+      0%, 25% {
+        opacity: 1;
+      }
+      35%, 90% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">Accueil</a>
+        <a href="concept.html">Concept Unique</a>
+        <a href="hebergement.html">Hébergement</a>
+      </div>
+      <div class="nav-logo">
+        <img src="./assets/logo.png" alt="Logo" />
+      </div>
+      <div class="nav-right">
+        <a href="inclus-sejour.html">Inclus dans le Séjour</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="experience.html">Mon Expérience</a>
+      </div>
+    </nav>
+  </header>
+  <nav class="mobile-nav">
+    <div class="nav-header">
+        <img src="./assets/logo.png" alt="Logo" class="nav-logo">
+        <div class="burger-icon" id="burger-icon">
+            ☰
+        </div>
+    </div>
+    <div class="nav-links" id="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="concept.html">Concept Unique</a>
+        <a href="hebergement.html">Hébergement</a>
+        <a href="inclus-sejour.html">Inclus dans le Séjour</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="experience.html">Mon Expérience</a>
+    </div>
+  </nav>
+  <main id="main-experience">
+    <div id="my-xp">
+      <img src="./assets/coach_fred.png" alt="Photo de Frédéric le coach" />
+      <div style="padding-left: 20px">
+        <h1 style="margin-top: 0px; margin-bottom: 0px">Mon Expérience</h1>
+        <p><strong>Qui suis-je ?</strong></p>
+        <p>
+          Passionné depuis plus 10 ans de sport et de bien-être, ces piliers
+          font partie intégrantes de ma vie. J'ai toujours eu cette envie
+          d'accompagner et d'aider les personnes à se sentir bien physiquement
+          et mentalement !
+        </p>
+        <p>
+          Cet accompagnement sur mesure est basé sur l'<strong>écoute du besoin</strong> des
+          personnes. Dans ce monde ou tout va trop vite, il est primordial de
+          se reconnecter à son capital santé.
+        </p>
+        <p>
+          Your Fit Exclusive est un concept exceptionnel, une expérience
+          unique qui vise à plonger son corps et son esprit dans une aventure
+          intensément liée au bien-être physique et mental !
+        </p>
+        <p>
+          Un séjour fitness personnalisé 100% remise en forme adapté à votre
+          condition physique grâce à une approche globale de la santé physique
+          et émotionnelle.
+        </p>
+        <p>
+          Notre accompagnement lors de votre séjour en immersion s'adresse à
+          tout public : <strong>hommes et femmes, sportifs débutants ou confirmés,
+          jeunes ou plus agés</strong>.
+        </p>
+        <p>
+          Avec tout ce que j'ai pu voir autour des séjours de remise en forme,
+          je me suis rendu compte que certains séjours n'étaient adaptés mais
+          aussi pas à la portée de tout le monde.
+        </p>
+      </div>
+    </div>
+    <h2 style="text-align: center; margin-top: 25px;">
+      Découvrez les transformations de nos clients !
+    </h2>
+    <div class="animation-wrapper">
+      <div class="animation-container">
+        <div class="image before"></div>
+        <div class="image after"></div>
+      </div>
+      <div class="animation-container">
+        <div class="image image2 before"></div>
+        <div class="image image2 after"></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

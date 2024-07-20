@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="desktop-nav">
+            <div class="nav-left">
+                <a href="index.html">Accueil</a>
+                <a href="concept.html">Concept Unique</a>
+                <a href="hebergement.html">Hébergement</a>
+            </div>
+            <div class="nav-logo">
+                <img src="./assets/logo.png" alt="Logo">
+            </div>
+            <div class="nav-right">
+                <a href="inclus-sejour.html">Inclus dans le Séjour</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="experience.html">Mon Expérience</a>
+            </div>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <div class="nav-header">
+            <img src="./assets/logo.png" alt="Logo" class="nav-logo">
+            <div class="burger-icon" id="burger-icon">
+                ☰
+            </div>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="concept.html">Concept Unique</a>
+            <a href="hebergement.html">Hébergement</a>
+            <a href="inclus-sejour.html">Inclus dans le Séjour</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="experience.html">Mon Expérience</a>
+        </div>
+    </nav>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="./assets/video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo HTML5.
+        </video>
+    </div>
+    <main>
+        <div>
+            <h1 class="title">Séjour en immersion 100% remise en forme</h1>
+            <h2 class="subtitle">Le fitness au service de votre santé</h2>
+        </div>
+        <section id="cards">
+            <article class="card">
+                <img src="./assets/sport.jpg" alt="Image 1">
+                <h3>Sport & motivation</h3>
+                <p>Des séances de coaching ludiques, dynamiques et adaptées à votre condition physique pour un accompagnement optimal selon vos objectifs.</p>
+            </article>
+            <article class="card">
+                <img src="./assets/detente.jpg" alt="Image 2">
+                <h3>Détente & bien-être</h3>
+                <p>Parce que prendre soin de soi est indispensable, nous allons vous concontez de nombreux soins pour le corps et le visage afin de vivre des purs moments de relaxation.</p>
+            </article>
+            <article class="card">
+                <img src="./assets/nutrition.jpg" alt="Image 3">
+                <h3>Nutrition & état d'esprit</h3>
+                <p>Vous allez recharger votre niveau d’énergie et vous détacher de vos mauvaises habitudes alimentaires grâce à un rééquilibrage alimentaire complet.</p>
+            </article>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

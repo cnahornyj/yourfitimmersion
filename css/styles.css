@@ -1,0 +1,432 @@
+body {
+  font-family: "Lato", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbfaf4;
+}
+
+/* Barre de navigation */
+
+header {
+  background-color: #332b24;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 50px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+header nav a:hover {
+  background-color: #575757;
+}
+
+/* Navigation mobile */
+
+.mobile-nav {
+  display: none; /* Masquer la navigation mobile par défaut */
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #332b24;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.nav-logo {
+  height: 50px;
+  padding-left: 10px;
+}
+
+.burger-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: whitesmoke;
+  padding-right: 10px;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Media query pour les écrans jusqu'à 1000px */
+@media (max-width: 1000px) {
+  #main-concept > img, #main-hebergement > img, #main-sejour > img {
+    display: none;
+  }
+  #my-xp {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+/* Media query pour les écrans jusqu'à 882px */
+@media (max-width: 882px) {
+  #cards {
+      display: flex;
+      flex-wrap: wrap; /* Permet aux cartes de passer à la ligne */
+      gap: 20px; /* Espace entre les cartes */
+      justify-content: center; /* Centre les cartes */
+  }
+
+  #cards .card {
+      flex: 1 1 300px; /* Les cartes ont une largeur minimale de 300px et s'adaptent à l'espace disponible */
+      max-width: 300px; /* Limite la largeur maximale des cartes */
+      margin-bottom: 20px; /* Espace en bas des cartes */
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-icon {
+      display: none; /* Masquer l'icône burger sur les grands écrans */
+  }
+
+  .nav-links {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .nav-links a {
+      border-bottom: none;
+      border-left: 1px solid #ddd;
+  }
+
+  .nav-links a:first-child {
+      border-left: none;
+  }
+}
+
+/* Media query pour les écrans jusqu'à 767px */
+@media (max-width: 767px) {
+  header {
+      display: none; /* Masquer le header complet sur les petits écrans */
+  }
+
+  .mobile-nav {
+      display: flex; /* Afficher la navigation mobile sur les petits écrans */
+  }
+
+  #cards {
+      display: flex;
+      flex-direction: column; /* Disposer les cartes en colonne */
+      align-items: center; /* Centrer les cartes horizontalement */
+      gap: 20px; /* Espace entre les cartes */
+  }
+
+  #cards .card {
+      flex: 1 1 auto; /* Permet à la carte de s'ajuster à l'espace disponible */
+      max-width: 90%; /* Limite la largeur des cartes */
+      margin-bottom: 20px; /* Espace en bas des cartes */
+      display: flex;
+      flex-direction: column; /* Assure que le contenu s'étire verticalement */
+  }
+
+  .card > img {
+      width: 100%; /* Assure que les images s'étirent sur toute la largeur de la carte */
+      height: auto; /* Maintient le ratio de l'image */
+  }
+
+  .card > h3, .card > p {
+      margin: 10px; /* Ajoute de l'espace autour du texte */
+  }
+}
+
+/* Media query pour les écrans jusqu'à 767px */
+@media (max-width: 767px) {
+  main {
+    padding: 0 !important;
+  }
+  .title {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+/* Styles supplémentaires pour le reste de la page */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  max-width: 1000px;
+  color: #332b24;
+}
+
+h1 {
+  font-family: "Lustria";
+  margin-top: 0;
+  border-bottom: 1px solid #cccccc7a;
+}
+
+h2 {
+  font-family: "Lustria";
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-top: 0px;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid lightgrey;
+  background-color: floralwhite;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.card > h3 {
+  padding: 0 20px;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  flex-grow: 1;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 1.25;
+}
+
+#cards .card:not(:last-child) {
+  margin-right: 20px;
+}
+
+.card > img {
+  width: 100%;
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensuring images cover the area without distortion */
+  filter: grayscale(0.15);
+}
+
+#main-concept,
+#main-hebergement,
+#main-sejour {
+  top: 100px;
+  display: flex;
+}
+
+#main-sejour {
+  top: 75px;
+}
+
+#main-tarifs,
+#main-experience {
+  top: 75px;
+}
+
+#main-tarifs > h1 {
+  margin: 0 20px;
+}
+
+#main-tarifs > p {
+  margin: 10px 20px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 0.85em;
+}
+
+#main-concept img,
+#main-hebergement img {
+  width: 30%;
+  border-radius: 5px;
+}
+
+#main-sejour img {
+  width: 1000px;
+  height: 600px;
+  border-radius: 5px;
+}
+
+#main-experience > img {
+  width: 40%;
+}
+
+#main-concept > div,
+#main-hebergement > div,
+#main-sejour > div {
+  padding: 0 20px;
+}
+
+#main-concept > div > p,
+#main-hebergement > div > p {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+#main-sejour > div > p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+#main-sejour ul {
+  line-height: 1.5;
+}
+
+#main-sejour ul li {
+  font-size: 0.75em;
+}
+
+/* Page Tarifs */
+
+.formule {
+  background: #332b24;
+  color: antiquewhite;
+  text-align: right;
+}
+
+.formule > h3 {
+  font-size: 1em;
+}
+
+#my-xp {
+  display: flex;
+}
+
+#my-xp > img {
+  width: 40%;
+  border-radius: 5px;
+}
+
+#my-xp > div > p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 0.85em;
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image {
+  filter: saturate(0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fadeInOut 6s infinite;
+}
+
+.image-1 {
+  background-image: url("../assets/transformation_bef_1.jpg");
+}
+
+.image-2 {
+  background-image: url("../assets/transformation_aft_1.jpg");
+  animation-delay: 3s;
+}
+
+@keyframes fadeInOut {
+  0%,
+  25% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  25.1%,
+  50% {
+      opacity: 0;
+      transform: scale(1.1);
+  }
+  50.1%,
+  75% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  75.1%,
+  100% {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+}
