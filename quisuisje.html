@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui suis-je ?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/quisuisje.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar Desktop -->
+        <nav class="desktop-nav">
+            <div class="nav-left">
+                <a href="index.html">Accueil</a>
+                <a href="concept.html">Concept unique</a>
+                <a href="hebergement.html">Hébergement</a>
+            </div>
+            <div class="nav-logo">
+                <img src="./assets/logo.png" alt="Logo">
+            </div>
+            <div class="nav-right">
+                <a href="inclus.html">Inclus dans le séjour</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="quisuisje.html">Qui suis-je ?</a>
+            </div>
+        </nav>
+
+        <!-- Navbar Mobile -->
+        <nav class="mobile-nav">
+            <div class="nav-header">
+                <img src="./assets/logo.png" alt="Logo" class="nav-logo">
+                <div class="burger-icon" id="burger-icon">☰</div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="concept.html">Concept unique</a>
+                <a href="hebergement.html">Hébergement</a>
+                <a href="inclus.html">Inclus dans le séjour</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="quisuisje.html">Qui suis-je ?</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img src="./assets/fred_coach.jpg" alt="Photo du coach Fred">
+        <div>
+            <h1>Qui suis-je ?</h1>
+            <p>
+                Fred, Coach « Fitness & Mental » certifié, spécialisé dans la remise en forme physique et le bien-être
+                mental. <br>
+
+                J’accompagne mes clients avec des entraînements sur-mesure, adaptés à leurs objectifs, quel que soit
+                leur niveau ou leur condition physique. <br>
+
+                Fort de plusieurs années d'expérience et un parcours international dans le fitness, j'ai accompagné
+                des athlètes, des célébrités et des personnes de tous horizons. <br>
+
+                Ma maîtrise de multiples disciplines (musculation, cardio, fitness, boxing, cross training,
+                stretching) vous offrent des séances variées et personnalisées qui vous aideront à vous remettre en
+                forme. <br>
+
+                Je m’engage à vous faire vivre une expérience humaine et sportive enrichissante, où chaque séance vous
+                permettra non seulement de renforcer votre corps, mais aussi de booster votre confiance en vous et de
+                libérer votre plein potentiel, dans une ambiance conviviale. <br>
+
+                À la fin de votre séjour sportif et bien-être, vous repartirez avec les clés pour maintenir une vie
+                active et équilibrée.
+
+            </p>
+            <h2>Prêt à vivre l’aventure d’un coaching sur-mesure ? <br>
+                Ensemble, révélons la meilleure version de vous-même !</h2>
+        </div>
+    </main>
+    <h3>Découvrez les transformations <br> de mes clients</h3>
+    <div class="carousel-container">
+        <div class="carousel-slide active">
+            <img src="./assets/image_before_1.jpg" alt="Avant" class="image before">
+            <img src="./assets/image_after_1.jpg" alt="Après" class="image after hidden">
+        </div>
+        <div class="carousel-slide">
+            <img src="./assets/image_before_2.jpg" alt="Avant" class="image before">
+            <img src="./assets/image_after_2.jpg" alt="Après" class="image after hidden">
+        </div>
+        <div class="carousel-slide">
+            <img src="./assets/image_before_3.jpg" alt="Avant" class="image before">
+            <img src="./assets/image_after_3.jpg" alt="Après" class="image after hidden">
+        </div>
+        <div class="carousel-slide">
+            <img src="./assets/image_before_5.jpg" alt="Avant" class="image before">
+            <img src="./assets/image_after_5.jpg" alt="Après" class="image after hidden">
+        </div>
+        <div class="carousel-slide">
+            <img src="./assets/image_before_7.jpg" alt="Avant" class="image before">
+            <img src="./assets/image_after_7.jpg" alt="Après" class="image after hidden">
+        </div>
+        <div class="carousel-slide">
+            <img src="./assets/image_before_8.jpg" alt="Avant" class="image before">
+            <img src="./assets/image_after_8.jpg" alt="Après" class="image after hidden">
+        </div>
+        <div class="carousel-slide">
+            <img src="./assets/image_before_10.jpg" alt="Avant" class="image before">
+            <img src="./assets/image_after_10.jpg" alt="Après" class="image after hidden">
+        </div>
+        <div class="carousel-controls">
+            <span class="control active" data-slide="0"></span>
+            <span class="control" data-slide="1"></span>
+            <span class="control" data-slide="2"></span>
+            <span class="control" data-slide="3"></span>
+            <span class="control" data-slide="4"></span>
+            <span class="control" data-slide="5"></span>
+            <span class="control" data-slide="6"></span>
+        </div>
+    </div>
+    <script src="js/carousel.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

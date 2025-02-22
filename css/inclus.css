@@ -1,0 +1,119 @@
+main {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 25px;
+    margin-top: 150px;
+}
+
+main img {
+    width: 40%;
+}
+
+main div p {
+    font-weight: bold;
+}
+
+main div h2 {
+    padding: 0 75px;
+    line-height: 1;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+#section-inclus {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.inclus {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.inclus:nth-child(2) {
+    padding-left: 75px;
+}
+
+.title {
+    font-weight: bold;
+    margin-left: 40px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.title:nth-child(3) {
+    margin-top: 50px;
+}
+
+li {
+    line-height: 1.5;
+    font-size: 18px;
+    hyphens: auto;
+}
+
+/* Quand l'écran fait moins de 1250px, on cache la navbar desktop et on affiche la navbar mobile */
+@media (max-width: 1250px) {
+    main {
+        flex-direction: column;
+    }
+
+    main img {
+        align-self: center;
+        width: 75% !important;
+        height: 500px !important;
+        object-fit: cover;
+    }
+
+    #section-inclus {
+        width: 85%;
+        margin: auto;
+    }
+
+    main div h1 {
+        margin-bottom: 0px;
+    }
+
+    main div p {
+        padding: 0 25px;
+        text-align: left;
+    }
+
+    .inclus {
+        padding-left: 0px;
+    }
+    .inclus:nth-child(2) {
+        padding: 0;
+    }
+    .title {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    #section-inclus {
+        flex-direction: column;
+    }
+
+    .inclus {
+        width: 90%;
+    }
+
+    .title:first-child {
+        margin-top: 10px;
+    }
+
+    .title {
+        margin-bottom: 5px;
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+    .title:nth-child(3) {
+        margin-top: 25px;
+    }
+}

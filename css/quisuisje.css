@@ -1,0 +1,150 @@
+main {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+}
+
+main img {
+    width: 40%;
+    object-fit: contain;
+}
+
+main div h2 {
+    padding-left: 75px;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+
+main div p {
+    padding-left: 50px;
+    text-align: justify;
+    line-height: 1.75;
+    font-size: 16px;
+    font-weight: bold;
+    hyphens: auto;
+}
+
+h2 {
+    font-size: 1.75rem !important;
+}
+
+h3 {
+    font-family: 'Patrick Hand SC', serif;
+    font-size: 2.5rem ! important;
+    line-height: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Quand l'écran fait moins de 1250px, on cache la navbar desktop et on affiche la navbar mobile */
+@media (max-width: 1250px) {
+    main {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    main img {
+        align-self: center;
+        width: 75% !important;
+        height: 500px !important;
+        object-fit: cover;
+    }
+
+    main div {
+        width: 75%;
+        margin: auto;
+    }
+
+    main div h1 {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    main div p {
+        padding-left: 0px;
+        font-size: 18px;    
+    }
+
+    main div h2 {
+        padding-left: 0px;
+    }
+}
+
+/* Section transformations */
+#transformations {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* Pour séparer le texte et le carrousel */
+    align-items: center;
+    gap: 20px;
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 500px;
+    height: 60vh;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.before {
+    opacity: 1;
+}
+
+.after {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.after.visible {
+    opacity: 1;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 2s ease-in-out;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.control {
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control.active {
+    background-color: #332b24;
+}

@@ -1,0 +1,107 @@
+/* Barre de navigation */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #332b24;
+  z-index: 1000;
+}
+
+/* Version Desktop - Affichage par défaut */
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 100px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Version Mobile - Cachée par défaut, affichée sous 1250px */
+.mobile-nav {
+  display: none;
+  background-color: #332b24; /* Ajout du fond marron */
+  width: 100%; /* S'assurer que la largeur soit 100% */
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; /* Un peu plus de padding pour que la navbar ait plus de hauteur */
+}
+
+.nav-logo img {
+  height: 100px;  /* Taille du logo réduite en version mobile */
+}
+
+.burger-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  display: none; /* Cache les liens par défaut */
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-links.active {
+  display: flex; 
+  align-items: baseline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 15px;
+}
+
+.nav-links a:last-child {
+  margin-bottom: 20px;
+}
+
+/* Quand l'écran fait moins de 1250px, on cache la navbar desktop et on affiche la navbar mobile */
+@media (max-width: 1250px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  /* Réduire la taille du logo en version mobile */
+  .mobile-nav .nav-logo {
+    height: 75px;  /* Logo encore plus petit en version mobile */
+  }
+}
+
+/* Assurez-vous que body et html occupent toute la largeur */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

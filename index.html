@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+    <header>
+        <!-- Navbar Desktop -->
+        <nav class="desktop-nav">
+            <div class="nav-left">
+                <a href="index.html">Accueil</a>
+                <a href="concept.html">Concept unique</a>
+                <a href="hebergement.html">Hébergement</a>
+            </div>
+            <div class="nav-logo">
+                <img src="./assets/logo.png" alt="Logo">
+            </div>
+            <div class="nav-right">
+                <a href="inclus.html">Inclus dans le séjour</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="quisuisje.html">Qui suis-je ?</a>
+            </div>
+        </nav>
+        
+        <!-- Navbar Mobile -->
+        <nav class="mobile-nav">
+            <div class="nav-header">
+                <img src="./assets/logo.png" alt="Logo" class="nav-logo">
+                <div class="burger-icon" id="burger-icon">☰</div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="concept.html">Concept unique</a>
+                <a href="hebergement.html">Hébergement</a>
+                <a href="inclus.html">Inclus dans le séjour</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="quisuisje.html">Qui suis-je ?</a>
+            </div>
+        </nav>
+    </header>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="./assets/video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo HTML5.
+        </video>
+    </div>
+    <div class="main-index">
+        <div class="title">
+            <h1>SEJOUR SPORTIF & BIEN ETRE</h1>
+            <h2>100% Remise en forme !</h2>
+        </div>
+    </div>
+    <section id="cards">
+        <article class="card">
+            <img src="./assets/sport2.jpg" alt="Image 1">
+            <h3>Sport & motivation</h3>
+            <p>Des séances de coaching personnalisées, conçues sur mesure pour vous avec un accompagnement individuel et optimal selon vos objectifs.</p>
+        </article>
+        <article class="card">
+            <img src="./assets/detente1.jpg" alt="Image 2">
+            <h3>Détente & bien-être</h3>
+            <p>Parce que prendre soin de soi est essentiel, offrez à votre corps et à votre esprit une immersion 100% remise en forme, dans un cadre idyllique et apaisant pour une détente absolue.</p>
+        </article>
+        <article class="card">
+            <img src="./assets/nutrition.jpg" alt="Image 3">
+            <h3>Rééquilibrage nutrionnel et harmonie intérieure</h3>
+            <p>Apprenez les bases de la nutrition pour comprendre les principes de l'alimentation. Mettez en place un rééquilibrage alimentaire pendant votre immersion, avec des repas équilibrés et adaptés à vos besoins. Vous aurez également la possibilité de pratiquer le jeûne intermittent pour booster et détoxifier votre organisme.</p>
+        </article>
+    </section>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
