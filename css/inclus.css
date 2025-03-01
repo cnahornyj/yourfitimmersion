@@ -95,6 +95,14 @@ li {
     }
 }
 
+@media (min-width: 500px) and (max-width: 1250px) {
+    main img {
+        width: 40% !important; 
+        height: auto !important; 
+        object-fit: contain;
+    }
+}
+
 @media (max-width: 800px) {
     #section-inclus {
         flex-direction: column;
@@ -115,5 +123,9 @@ li {
     }
     .title:nth-child(3) {
         margin-top: 25px;
+    }
+
+    main img {
+        object-fit: contain;
     }
 }
