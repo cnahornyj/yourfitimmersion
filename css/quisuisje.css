@@ -95,12 +95,45 @@ h3 {
 
 .carousel-container {
     position: relative;
-    width: 500px;
-    height: 50vh;
+    max-width: 700px;
+    height: 75vh;
     overflow: hidden;
     margin: auto;
     margin-bottom: 50px;
 }
+
+@media (max-width: 900px) {
+    .carousel-container {
+      max-width: 700px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .carousel-container {
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .carousel-container {
+      max-width: 500px;      
+      height: 65vh;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .carousel-container {
+      max-width: 400px;
+      height: 55vh;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .carousel-container {
+      max-width: 300px;
+      height: 45vh;
+    }
+  }
 
 .carousel-slide {
     position: absolute;
