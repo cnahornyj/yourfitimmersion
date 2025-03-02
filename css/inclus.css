@@ -8,11 +8,8 @@ main {
 }
 
 main img {
-    width: 40%;
-}
-
-main div p {
-    font-weight: bold;
+    width: 400px;
+    height: fit-content;
 }
 
 main div h2 {
@@ -32,18 +29,17 @@ h1 {
 }
 
 .inclus {
-    width: 50%;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .inclus:nth-child(2) {
     padding-left: 75px;
 }
 
-.title {
-    font-weight: bold;
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
     margin-left: 40px;
-    font-size: 18px;
     text-decoration: underline;
 }
 
@@ -52,9 +48,15 @@ h1 {
 }
 
 li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     line-height: 1.5;
     font-size: 18px;
     hyphens: auto;
+}
+
+.mobile-title {
+    display: none;
 }
 
 /* Quand l'écran fait moins de 1250px, on cache la navbar desktop et on affiche la navbar mobile */
@@ -62,11 +64,15 @@ li {
     main {
         flex-direction: column;
     }
-
+    .mobile-title {
+        display: block;
+    }
+    .title {
+        display: none;
+    }
     main img {
         align-self: center;
         width: 75% !important;
-        height: 500px !important;
         object-fit: cover;
     }
 
@@ -77,6 +83,7 @@ li {
 
     main div h1 {
         margin-bottom: 0px;
+        margin-top: 10px;
     }
 
     main div p {
@@ -90,14 +97,22 @@ li {
     .inclus:nth-child(2) {
         padding: 0;
     }
-    .title {
+    .subtitle {
         margin-left: 0px;
     }
 }
 
-@media (min-width: 500px) and (max-width: 1250px) {
+@media (min-width: 800px) and (max-width: 1250px) {
     main img {
         width: 40% !important; 
+        height: auto !important; 
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    main img {
+        width: 60% !important; 
         height: auto !important; 
         object-fit: contain;
     }

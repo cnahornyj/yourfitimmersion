@@ -3,18 +3,23 @@ main {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    margin-top: 100px;
+    margin-top: 125px;
 }
 
 main img {
-    width: 40%;
+    width: 400px;
     object-fit: contain;
+}
+
+main div h1 {
+    font-size: 2rem !important;
 }
 
 main div h2 {
     padding-left: 75px;
-    line-height: 1;
+    line-height: 1.25;
     margin-bottom: 0px;
+    font-size: 1.5rem !important;
 }
 
 main div p {
@@ -22,27 +27,31 @@ main div p {
     text-align: justify;
     line-height: 1.75;
     font-size: 16px;
-    font-weight: bold;
     hyphens: auto;
 }
 
-h2 {
-    font-size: 1.75rem !important;
-}
-
 h3 {
-    font-family: 'Patrick Hand SC', serif;
-    font-size: 2.5rem ! important;
+    font-family: 'Raleway', serif;
+    font-size: 1.5rem;
     line-height: 40px;
     margin-top: 50px;
     text-align: center;
 }
 
+.title-mobile {
+    display: none;
+}
+
 /* Quand l'écran fait moins de 1250px, on cache la navbar desktop et on affiche la navbar mobile */
 @media (max-width: 1250px) {
+    .title-mobile {
+        display: block;
+    }
+    .title {
+        display: none;
+    }
     main {
         flex-direction: column;
-        margin-top: 150px;
     }
 
     main img {
@@ -79,7 +88,6 @@ h3 {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* Pour séparer le texte et le carrousel */
     align-items: center;
     gap: 20px;
 }
