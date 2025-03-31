@@ -50,7 +50,7 @@ h2 {
 
 /* Titre des cartes */
 .card h3 {
-    text-align: right;
+    text-align: left;
     padding: 0 15px;
     margin-bottom: 10px;
 }
@@ -58,10 +58,10 @@ h2 {
 /* Texte des cartes */
 .card p {
     text-align: right;
-    line-height: 1.5;
     padding: 0 15px;
-    margin-top: 0px;
     margin-bottom: 15px;
+    font-size: 1.15em;
+    letter-spacing: 0.1px;
 }
 
 /* Ajustements pour les petits écrans */
